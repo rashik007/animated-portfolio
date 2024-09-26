@@ -1,0 +1,64 @@
+html {
+  scroll-snap-type: y proximity;
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0c0c1d;
+  color: lightgray;
+}
+
+section {
+  height: 100vh;
+  scroll-snap-align: center;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: black;
+}
+.sidebar .bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 400px;
+  background: white;
+}
+.sidebar .bg .links {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.sidebar .bg .links a {
+  font-size: 40px;
+  color: black;
+  text-decoration: none;
+}
+.sidebar button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: fixed;
+  top: 25px;
+  left: 25px;
+  background-color: transparent;
+  border: none;
+}/*# sourceMappingURL=sidebar.css.map */
